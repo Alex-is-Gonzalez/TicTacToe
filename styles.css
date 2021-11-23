@@ -1,0 +1,58 @@
+body {
+  background-color: #000000c9;
+}
+
+button {
+  background-color: #951f0a;
+  border: 6px solid #ebdc0f;
+  border-radius: 10px;
+}
+
+.game-board {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  background-color: #951f0a;
+  color: #ebdc0f;
+  text-align: center;
+  border: 6px solid #0b0d0f;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  padding: 30px;
+}
+
+.grid-row {
+  
+  border-radius: 6px;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 4em;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+  
+}
+
+.block {
+  color: antiquewhite;
+  border-radius: 6px;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 20em;
+}
+
+.red {
+  color: #ebdc0f;
+}
+
+.white {
+  color: #ebdc0f;
+}
+@media screen and (max-width: 620px) {
+  button,
+  .game-board, .grid-row,  .block{
+    width: auto;
+  }}
